@@ -1,10 +1,14 @@
 import React from 'react';
+import notes from '../assests/data';
+import ListItem from '../components/ListItem';
 
 
 function NotesListPage() {
     return (
         <>
-            <p>Notes Body</p>
+            {notes.map(note => (
+               <ListItem note={note} />
+            ) )}
         </>
     )
 }
