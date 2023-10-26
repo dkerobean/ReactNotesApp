@@ -1,10 +1,15 @@
 import React from "react";
+import notes from '../assests/data';
 
 
-function NotePage() {
+function NotePage({match}) {
+
+    let noteId = match.params.id;
+    let note = notes.find(note => note.id === Number(noteId));
+
     return (
         <>
-            <h3> This is a single note page</h3>
+            <p> {note.body} </p>
         </>
     )
 }

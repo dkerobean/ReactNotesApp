@@ -10,7 +10,7 @@ function App() {
         <h1>This is my first React App</h1>
         <Switch>
           <Route path='/' exact component={NotesListPage} />
-          <Route path='/notes' component={NotePage} />
+          <Route path='/notes/:id' component={NotePage} />
         </Switch>
       </>
     </Router>
