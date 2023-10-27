@@ -4,9 +4,9 @@ import React from 'react';
 function Header() {
 
     return (
-        <>
-            <h1> This is a the Header</h1>
-        </>
+        <div className='app-header'>
+            <h1>Notes List</h1>
+        </div>
     )
 }
 

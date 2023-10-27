@@ -6,7 +6,9 @@ function ListItem({note}) {
     console.log(note.id);
     return (
         <Link to={`/notes/${note.id}`}>
+        <div className="notes-list-item">
             <h3> {note.body}</h3>
+        </div>
         </Link>
     )
 }
